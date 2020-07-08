@@ -52,7 +52,7 @@ El elemento `<meta charset="utf-8">` **establece que el documento HTML usará la
 
 \[\]... carácter de referencia comienza con un signo de ampersand \(&\) y finaliza con un punto y coma \(;\).
 
-```text
+```HTML
 <p>En HTML, defines un párrafo con el elemento <p>.</p>
 <p>En HTML, defines un párrafo con el elemento &lt;p&gt;.</p>
 ```
