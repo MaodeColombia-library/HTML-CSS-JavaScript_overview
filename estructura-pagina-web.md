@@ -4,31 +4,68 @@ description: >-
   aprendizaje de desarrollo web con HTML, CSS y JavaScript.
 ---
 
-# Estructura básica de una página WEB - HTML/CSS
+# Estructura básica de una página WEB - HTML, CSS y JavaScript
 
- **HTML** es un lenguaje que nos permite definir **la estructura** de las páginas Web. **CSS** es un lenguaje que nos permite definir **el formato \(los estilos\)** de los elementos HTML
+\*\*\*\*[**HTML**](https://developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/iniciar) es un lenguaje que nos permite definir **la estructura** de las páginas Web. **CSS** es un lenguaje que nos permite definir **el formato \(los estilos\)** de los elementos HTML. **JavaScript** es lenguaje de programacion que permite agregar interactividad a la página WEB y toso esto se esxplica por si solo con esta [muestra](https://html-css-js.com/)
 
-Es importante aprender HTML, CSS y JavaScript para no limitarnos en la creación de paginas WEB, se pueden encontrar en el mercado opciones como "plantillas estaticas" o "platillas con aaceso al código"
+![](.gitbook/assets/og.jpg)
 
-La estructura más básica de una WEB está hecha con solo HTML se compone de dos etiquetas.
+### Anatomía de un documento HTML <a id="Anatom&#xED;a_de_un_documento_HTML"></a>
 
-![](.gitbook/assets/20200706182254.png)
+ El [elemento HTML](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/html) `<html> </html>`representa la raíz de un documento HTML, el resto de elementos descienden de este elemento. El contenido permitido dentro de las etiquetas HTML es **un** elemento [`<head>`](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/head) seguido de **un** elemento [`<body>`](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/body)
+
+![Estructura elemental HTML](.gitbook/assets/20200706182254.png)
 
 ```text
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-  </head>
-  <body>
-
-  </body>
+  <head>  </head>
+  <body>  </body>
 </html>
 ```
 
-_ver secuencia paso a paso en github de este documento_ [commit](https://github.com/MaodeColombia/HTML-CSS/commit/4c1a970eba3ec8ecbe53441665745433a4a9bdca)
+[commit](https://github.com/MaodeColombia/HTML-CSS/commit/4c1a970eba3ec8ecbe53441665745433a4a9bdca)
 
-Dentro del &lt;head&gt;
+El elemento `<!DOCTYPE html>` en sus inicios, cuando el HTML llevaba poco tiempo \(alrededor de 1991-1992\), los _doctypes_ servían como enlaces al conjunto de reglas que la página HTML debía seguir para que fuera considerado buen HTML, lo que podía significar poder efectuar una comprobación automática de errores y otras funcionalidades útiles. En la actualidad se ignora y se considera un **legado histórico que hay que incluir** para que todo funcione correctamente. 
+
+El elemento `<head></head>` actúa como **contenedor para todos los parámetros que quieras incluir en el documento HTML que** _**no será**_ **visible a los visitantes de la página**
+
+El elemento `<body></body>` actúa como **contenedor para todo el contenido que quieres mostrar a los usuarios** cuando visitan tu página
+
+Dentro de la etiqueta `<head>` se encuentra el elemento `<title></title>`, `<meta charset="utf-8">` .
+
+![Elementos &amp;lt;title&amp;gt; y &amp;lt;meta&amp;gt;](.gitbook/assets/20200707213719.png)
+
+El elemento `<title></title>` **establece el título de tu página**, que aparece en la pestaña/ventana de tu navegador cuando la página se carga,tambien se utiliza para describir la página cuando la añades a tus marcadores o la marcas como favorita y es _el factor más importante de la optimización on-page básica de una Web_
+
+El elemento `<meta charset="utf-8">` **establece que el documento HTML usará la codificación UTF-8**, que incluye la gran mayoría de caracteres de todos los idiomas humanos escritos. 
+
+
+
+
+
+
+
+
+
+### Inclusión de caracteres especiales en HTML <a id="Referencias_a_entidades_Inclusi&#xF3;n_de_caracteres_especiales_en_HTML"></a>
+
+\[\]... carácter de referencia comienza con un signo de ampersand \(&\) y finaliza con un punto y coma \(;\).
+
+```text
+<p>En HTML, defines un párrafo con el elemento <p>.</p>
+<p>En HTML, defines un párrafo con el elemento &lt;p&gt;.</p>
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
