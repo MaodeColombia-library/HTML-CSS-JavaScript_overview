@@ -10,13 +10,13 @@ description: >-
 
 ![HTML, HTML+CSS, HTML+CSS+JavaScript](.gitbook/assets/og.jpg)
 
-### Anatomía de un documento HTML <a id="Anatom&#xED;a_de_un_documento_HTML"></a>
+## Anatomía de un documento HTML <a id="Anatom&#xED;a_de_un_documento_HTML"></a>
 
- El [elemento HTML](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/html) `<html> </html>`representa la raíz de un documento HTML, el resto de elementos descienden de este elemento. El contenido permitido dentro de las etiquetas HTML es **un** elemento [`<head>`](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/head) seguido de **un** elemento [`<body>`](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/body)
+El [elemento HTML](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/html) `<html> </html>`representa la raíz de un documento HTML, el resto de elementos descienden de este elemento. El contenido permitido dentro de `<html> </html>` es **un** elemento [`<head>`](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/head) seguido de **un** elemento [`<body>`](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/body)
 
 ![Estructura elemental HTML](.gitbook/assets/20200706182254.png)
 
-```HTML
+```markup
 <!DOCTYPE html>
 <html>
   <head>  </head>
@@ -32,7 +32,7 @@ El elemento `<head></head>` actúa como **contenedor para todos los parámetros 
 
 El elemento `<body></body>` actúa como **contenedor para todo el contenido que quieres mostrar a los usuarios** cuando visitan tu página
 
-Dentro de la etiqueta `<head>` se encuentra el elemento `<title></title>`, `<meta charset="utf-8">` .
+Dentro del elemento `<head>` se encuentra el elemento `<title></title>`, `<meta charset="utf-8">` .
 
 ![Elementos &amp;lt;title&amp;gt; y &amp;lt;meta&amp;gt;](.gitbook/assets/20200707213719.png)
 
@@ -40,6 +40,18 @@ El elemento `<title></title>` **establece el título de tu página**, que aparec
 
 El elemento `<meta charset="utf-8">` **establece que el documento HTML usará la codificación UTF-8**, que incluye la gran mayoría de caracteres de todos los idiomas humanos escritos.
 
+```markup
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>primer práctica makeitreal</title>
+  </head>
+  <body>
+```
+
+[commit](https://github.com/MaodeColombia/HTML-CSS/commit/6820646c3730e71dc2a2b1fc24e3de79a3bb0aa6)
+
+![cambios con &amp;lt;charset&amp;gt; y con &amp;lt;title&amp;gt;](.gitbook/assets/20200708172008.png)
 
 
 
@@ -48,13 +60,26 @@ El elemento `<meta charset="utf-8">` **establece que el documento HTML usará la
 
 
 
-### Inclusión de caracteres especiales en HTML <a id="Referencias_a_entidades_Inclusi&#xF3;n_de_caracteres_especiales_en_HTML"></a>
 
-\[\]... carácter de referencia comienza con un signo de ampersand \(&\) y finaliza con un punto y coma \(;\).
 
-```HTML
-<p>En HTML, defines un párrafo con el elemento <p>.</p>
-<p>En HTML, defines un párrafo con el elemento &lt;p&gt;.</p>
+
+
+
+
+
+
+
+```markup
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>primer práctica makeitreal</title>
+  </head>
+  <body>
+    <h1>Título 1</h1>
+  </body>
+</html>
 ```
 
 
@@ -69,10 +94,44 @@ El elemento `<meta charset="utf-8">` **establece que el documento HTML usará la
 
 
 
+
+
+
+
+[Sección](https://wiki.developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/iniciar#Referencias_a_entidades_Inclusi%C3%B3n_de_caracteres_especiales_en_HTML)
+
+## Inclusión de caracteres especiales en HTML <a id="Referencias_a_entidades_Inclusi&#xF3;n_de_caracteres_especiales_en_HTML"></a>
+
+ En HTML, los caracteres `<`, `>`,`"`,`'` y `&` son [caracteres especiales](https://wiki.developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/iniciar#Referencias_a_entidades_Inclusi%C3%B3n_de_caracteres_especiales_en_HTML). Carácter de referencia comienza con un signo de ampersand `&` y finaliza con un punto y coma `;`.
+
+
+
+| Carácter literal  | Equivalente de referencia de caracteres |
+| :--- | :--- |
+| &lt; | &lt; |
+| &gt; | &gt; |
+| " | &quot; |
+| ' | &apos; |
+| & | &amp; |
+
+```markup
+<p>En HTML, defines un párrafo con el elemento <p>.</p>
+<p>En HTML, defines un párrafo con el elemento &lt;p&gt;.</p>
+```
+
+
+
+![](.gitbook/assets/20200708151059.png)
+
+
+
+
+
 HTML de forma predeterminada define cada característica del "documento", como el tamaño de la letra para el "Título 1" y que sea negrilla, el espaciado del interlineado, el ícono de las villnetas, asi que aquí es cuando CSS aparece para interactuar con el código para agregarle _estilos._
 
-Hay  tres partes donde se puede agregar los estilos CSS
+Hay tres partes donde se puede agregar los estilos CSS
 
-1. Dentro de la etiqueta HTML a la que se le aplicará el estilo, lo cual se considera una mala practica, ademas que no se recomienda mezclar HTML y CSS en el mismo archivo
+1. Dentro del elemento HTML a la que se le aplicará el estilo, lo cual se considera una mala practica, ademas que no se recomienda mezclar HTML y CSS en el mismo archivo
 2. dentro de un sección llamada &lt;style&gt;
 3. en un archivo fuera del código HTML que se está desarrollando
+
