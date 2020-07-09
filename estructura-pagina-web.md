@@ -53,22 +53,6 @@ El elemento `<meta charset="utf-8">` **establece que el documento HTML usará la
 
 ![cambios con &amp;lt;charset&amp;gt; y con &amp;lt;title&amp;gt;](.gitbook/assets/20200708172008.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```markup
 <!DOCTYPE html>
 <html>
@@ -82,50 +66,26 @@ El elemento `<meta charset="utf-8">` **establece que el documento HTML usará la
 </html>
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [Sección](https://wiki.developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/iniciar#Referencias_a_entidades_Inclusi%C3%B3n_de_caracteres_especiales_en_HTML)
 
 ## Inclusión de caracteres especiales en HTML <a id="Referencias_a_entidades_Inclusi&#xF3;n_de_caracteres_especiales_en_HTML"></a>
 
- En HTML, los caracteres `<`, `>`,`"`,`'` y `&` son [caracteres especiales](https://wiki.developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/iniciar#Referencias_a_entidades_Inclusi%C3%B3n_de_caracteres_especiales_en_HTML). Carácter de referencia comienza con un signo de ampersand `&` y finaliza con un punto y coma `;`.
+En HTML, los caracteres `<`, `>`,`"`,`'` y `&` son [caracteres especiales](https://wiki.developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/iniciar#Referencias_a_entidades_Inclusi%C3%B3n_de_caracteres_especiales_en_HTML). Carácter de referencia comienza con un signo de ampersand `&` y finaliza con un punto y coma `;`.
 
-
-
-| Carácter literal  | Equivalente de referencia de caracteres |
+| Carácter literal | Equivalente de referencia de caracteres |
 | :--- | :--- |
 | &lt; | &lt; |
 | &gt; | &gt; |
-| " | &quot; |
-| ' | &apos; |
-| & | &amp; |
+| " | " |
+| ' | ' |
+| & | & |
 
 ```markup
 <p>En HTML, defines un párrafo con el elemento <p>.</p>
 <p>En HTML, defines un párrafo con el elemento &lt;p&gt;.</p>
 ```
 
-
-
 ![](.gitbook/assets/20200708151059.png)
-
-
-
-
 
 HTML de forma predeterminada define cada característica del "documento", como el tamaño de la letra para el "Título 1" y que sea negrilla, el espaciado del interlineado, el ícono de las villnetas, asi que aquí es cuando CSS aparece para interactuar con el código para agregarle _estilos._
 

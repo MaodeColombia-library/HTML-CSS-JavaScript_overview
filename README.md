@@ -4,8 +4,6 @@ Este es un resumen ejecutivo de los primeros pasos del aprendizaje de desarrollo
 
 ![commit para c&#xF3;digo desarrollado a trav&#xE9;s del resumen](.gitbook/assets/20200707221924.png)
 
-
-
 Es importante aprender HTML, CSS y JavaScript para no limitarnos en la creación de paginas WEB, se pueden encontrar en el mercado opciones como "plantillas estáticas" o "platillas con acceso al código"
 
 | proveedor | modalidad |
