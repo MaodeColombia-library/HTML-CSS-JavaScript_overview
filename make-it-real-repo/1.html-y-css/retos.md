@@ -10,7 +10,7 @@ Este reto es modificar el codigo para que el texto "HTML" aparezca en negrita co
 <!DOCTYPE html>
 <html>
   <head></head>
-  <body>
+  <body>  
     ¡Hola HTML!
   </body>
 </html>
@@ -24,7 +24,7 @@ Este reto es modificar el codigo para que el texto "HTML" aparezca en negrita co
 
 La solución es la siguiente:
 
-```text
+```markup
 <!DOCTYPE html>
 <html>
   <head></head>
@@ -44,15 +44,15 @@ Este reto es modificar el código para obtener el siguiente resultado:
 
 **Nota:** Fíjate que la palabra "párrafo" debe estar en negrita en los dos párrafos. El evaluador espera que uses la etiqueta `strong` .
 
-```text
+```markup
 <!DOCTYPE html>
 <html>
   <head></head>
   <body>
     Este es el título
-    
+
     Este es el primer párrafo.
-    
+
     Este es el segundo párrafo.
   </body>
 </html>
@@ -64,15 +64,15 @@ Este reto es modificar el código para obtener el siguiente resultado:
 
 ### **Discusión:** Etiquetas
 
-```text
+```markup
 <!DOCTYPE html>
 <html>
   <head></head>
   <body>
     <h1>Este es el título</h1>
-    
+
     <p>Este es el primer <strong>párrafo</strong>. </p>
-    
+
     <p>Este es el segundo <strong>párrafo</strong>.</p>
   </body>
 </html>
@@ -88,18 +88,18 @@ En [este enlace](https://www.w3schools.com/tags/default.asp) puedes encontrar la
 
 Este reto es que el texto **"Ver más"** dentro de el código sea un vínculo \(link\) que nos lleve a [este enlace](http://blog.makeitreal.camp/html-css).
 
-```text
+```markup
 <!DOCTYPE html>
 <html>
   <head></head>
   <body>
     <h1>HTML y CSS</h1>
-    
-    <p>Para hacer páginas Web necesitas aprender dos lenguajes: 
-      HTML y CSS. Estos son los lenguajes que los navegadores 
-      (Firefox, Chrome, Internet Explorer) entienden e interpretan 
+
+    <p>Para hacer páginas Web necesitas aprender dos lenguajes:
+      HTML y CSS. Estos son los lenguajes que los navegadores
+      (Firefox, Chrome, Internet Explorer) entienden e interpretan
       para mostrarte lo que ves cuando abres alguna página.</p>
-    
+
     Ver más
   </body>
 </html>
@@ -114,16 +114,16 @@ Este reto es que el texto **"Ver más"** dentro de el código sea un vínculo \(
 
 La solución es
 
-```text
+```markup
 <!DOCTYPE html>
 <html>
   <head></head>
   <body>
     <h1>HTML y CSS</h1>
-    
-    <p>Para hacer páginas Web necesitas aprender dos lenguajes: 
-      HTML y CSS. Estos son los lenguajes que los navegadores 
-      (Firefox, Chrome, Internet Explorer) entienden e interpretan 
+
+    <p>Para hacer páginas Web necesitas aprender dos lenguajes:
+      HTML y CSS. Estos son los lenguajes que los navegadores
+      (Firefox, Chrome, Internet Explorer) entienden e interpretan
       para mostrarte lo que ves cuando abres alguna página.</p>
 
     <a href="http://blog.makeitreal.camp/html-css">Ver más</a>
@@ -141,28 +141,28 @@ Este reto es agregarle el título "El movimiento open source" al documento HTML 
 
 ![Open source](https://s3.amazonaws.com/makeitreal/results/open-source.png)
 
-```text
+```markup
 <!DOCTYPE html>
 <html>
   <head>
-    
+
   <head>
 <title>El movimiento open source</title>
 </head>
-    
+
   </head>
   <body>
     <h1>Open Source</h1>
     <p>Open source (código abierto) es un movimiento que se originó por la
-      ambigüedad del término <em>free software (software libre)</em>. El 
-      problema es que en Inglés la palabra <em>free</em> también significa 
+      ambigüedad del término <em>free software (software libre)</em>. El
+      problema es que en Inglés la palabra <em>free</em> también significa
       <em>gratis</em>, pero open source no necesariamente es gratis.</p>
-    
-    <p>El objetivo del movimiento es que todos tengan la capacidad de ver el 
-      código del software que están adquiriendo. Pero existe mucho software 
-      open source que no es gratis, especialmente para uso comercial. Un 
-      ejemplo es <a href="https://source.android.com/">Android</a>, que 
-      aunque es un proyecto open source, no significa que cualquiera pueda 
+
+    <p>El objetivo del movimiento es que todos tengan la capacidad de ver el
+      código del software que están adquiriendo. Pero existe mucho software
+      open source que no es gratis, especialmente para uso comercial. Un
+      ejemplo es <a href="https://source.android.com/">Android</a>, que
+      aunque es un proyecto open source, no significa que cualquiera pueda
       comercializar teléfonos con ese sistema operativo.</p>
   </body>
 </html>
@@ -176,7 +176,7 @@ Este reto es agregarle el título "El movimiento open source" al documento HTML 
 
 La solución es
 
-```text
+```markup
 <!DOCTYPE html>
 <html>
   <head>
@@ -185,15 +185,15 @@ La solución es
   <body>
     <h1>Open Source</h1>
     <p>Open source (código abierto) es un movimiento que se originó por la
-      ambigüedad del término <em>free software (software libre)</em>. El 
-      problema es que en Inglés la palabra <em>free</em> también significa 
+      ambigüedad del término <em>free software (software libre)</em>. El
+      problema es que en Inglés la palabra <em>free</em> también significa
       <em>gratis</em>, pero open source no necesariamente es gratis.</p>
-    
-    <p>El objetivo del movimiento es que todos tengan la capacidad de ver el 
-      código del software que están adquiriendo. Pero existe mucho software 
-      open source que no es gratis, especialmente para uso comercial. Un 
-      ejemplo es <a href="https://source.android.com/">Android</a>, que 
-      aunque es un proyecto open source, no significa que cualquiera pueda 
+
+    <p>El objetivo del movimiento es que todos tengan la capacidad de ver el
+      código del software que están adquiriendo. Pero existe mucho software
+      open source que no es gratis, especialmente para uso comercial. Un
+      ejemplo es <a href="https://source.android.com/">Android</a>, que
+      aunque es un proyecto open source, no significa que cualquiera pueda
       comercializar teléfonos con ese sistema operativo.</p>
   </body>
 </html>
@@ -201,7 +201,7 @@ La solución es
 
 Un documento HTML tiene dos grandes secciones: el encabezado \(`<head>`\) y el cuerpo \(`<body>`\) como se muestra en el siguiente ejemplo:
 
-```text
+```markup
 <!DOCTYPE html>
 <html>
   <head>
@@ -232,7 +232,7 @@ Este reto es crear una página con la receta de una ensalada. El resultado final
 
  **Discusión:** Una deliciosa receta
 
-```text
+```markup
 <!DOCTYPE html>
 <html>
 <head>
@@ -266,4 +266,3 @@ Excelente trabajo Maker!
 HTML permitiría definir la estructura de un documento, es decir, encabezados, párrafos, listas, etc. \(en ese momento no se podían incluir imágenes, video, o audio\). Pero lo realmente novedoso era que HTML permitiría incluir vínculos a otros documentos, creando así una **red de documentos interconectados**.Generalmente, el código HTML \(Hyper Text Markup Language\) viaja a través de HTTP \(Hyper Text Transfer Protocol\). Pero es posible crear un archivo de texto con extensión `.html` y abrirlo en un navegador directamente.
 
 **Nota:** La etiqueta `<meta charset="UTF-8">` dentro de `<head>` se usa para que las tildes funcionen.
-
