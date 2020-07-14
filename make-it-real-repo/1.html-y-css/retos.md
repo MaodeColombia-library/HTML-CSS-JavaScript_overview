@@ -62,7 +62,7 @@ Este reto es modificar el código para obtener el siguiente resultado:
 
 ### **Discusión:** Etiquetas
 
-```markup
+```html
 <!DOCTYPE html>
 <html>
   <head></head>
@@ -74,15 +74,13 @@ Este reto es modificar el código para obtener el siguiente resultado:
 </html>
 ```
 
-~~HTML está compuesto de etiquetas. Una etiqueta es una palabra clave encerrada entre `<` y `>`.~~
-
 Algunas etiquetas necesitan una **etiqueta de cierre** porque pueden contener texto y otras etiquetas anidadas. La **etiqueta de cierre** es muy parecida a una etiqueta, pero lleva un slash `/` antes de la palabra clave \(p.e. `</strong>` es la etiqueta de cierre de `<strong>`\).
 
 > El elemento lo conforman la suma de la etiqueta de apertura, la etiqueta de cierre y el contenido.
-
 ![](../../.gitbook/assets/htmlexp.png)
+[referencia](https://developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/iniciar#Anatomía_de_un_elemento_HTML)
 
-En [este enlace](https://www.w3schools.com/tags/default.asp) puedes encontrar la lista de etiquetas de HTML.
+Referencia de Elementos HTML en [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) y en [w3schools](https://www.w3schools.com/tags/default.asp)
 
 ## ¡Hypertexto!
 
@@ -736,4 +734,3 @@ o
 Las dos opciones son equivalentes pero es preferible la segunda que es más fácil de estilizar y nos ofrece más opciones como incluir imágenes y anidar otros elementos.
 
 HHHHHHHHHHHHHHHHHHHHHH
-
