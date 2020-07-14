@@ -303,7 +303,7 @@ Este reto es cambiar el color del texto que se encuentra dentro de la etiqueta `
 
 Este reto se podía solucionar de varias formas. Primero, era posible encerrar el texto en la etiqueta `<font>`:
 
-```markuptext
+```markup
 <font color="#FF0000"><span>...</span></font>
 ```
 
@@ -313,7 +313,7 @@ Recuerda que HTML define la estructura \(los elementos y el contenidos\) de los 
 
 Otra opción era agregar el estilo en el atributo `style` de la etiqueta `span`:
 
-```markuptext
+```markup
 <span style="color: red">...</span>
 ```
 
@@ -358,7 +358,7 @@ Este reto es crear un teclado numérico como el que se muestra en la siguiente i
 
 ![Dial pad](https://s3.amazonaws.com/makeitreal/results/dial-pad.png)
 
-```markuptext
+```markup
 <!DOCTYPE html>
 <html>
 <head>
@@ -386,7 +386,7 @@ Este reto es crear un teclado numérico como el que se muestra en la siguiente i
 
 Nuestra solución es la siguiente:
 
-```markuptext
+```markup
 <!DOCTYPE html>
 <html>
 <head>
@@ -441,7 +441,7 @@ Este reto es crear una lista de contactos como se muestra en la siguiente imagen
    * La primer fila debe estar compuesta por 5 table headers `<th>`
    * Las dos siguientes filas deben estar compuestas por 5 table cells `<td>`
 
-```markuptext
+```markup
 <!-- NOTE: no se cuenta con código base -->
 ```
 
@@ -614,7 +614,7 @@ Nuestra solución es la siguiente:
 
 Primero, fíjate que hemos definido los estilos en la etiqueta `style` dentro del `head`. Eso es preferible a definir los **estilos inline** como se muestra en el siguiente ejemplo:
 
-```markuptext
+```markup
 <div style="background: #303030; color: #dfdfdf; ...">
    ...
 </div>
@@ -652,7 +652,7 @@ Este reto es crear un formulario como el que se ve en la siguiente imagen:
 
 ![HTML Form](https://s3.amazonaws.com/makeitreal/results/html-form-1.png)
 
-```markuptext
+```markup
 <!DOCTYPE html>
 <html>
   <head>
@@ -677,16 +677,14 @@ Ten en cuenta las siguientes recomendaciones:
 
 1. Escribe tu solución. Usa una etiqueta `h1` para el encabezado y crea el formulario con el campo de texto y el botón para enviarlo.
 2. Oprime el botón **Preview** y prueba que el formulario funcione: escribe tu nombre y oprime el botón **¡Hola!**. Deberá aparecer...
-
 ![](../../.gitbook/assets/20200714003417.png)
-
 3. Oprime **Evaluar Solución** cuando hayas terminado.
 
 
 
 
 
-```markuptext
+```markup
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -715,14 +713,14 @@ Los formularios se usan, generalmente, para obtener información del usuario y e
 
 Existen dos formas de **enviar la información** que se controla con el atributo `method`. Los posibles valores son `get` y `post`.
 
-```markuptext
+```markup
 <form action="..." method="get">
 </form>
 ```
 
 * `method="get"` es la opción por defecto y envía la información a través de la URL \(p.e. `/forms/hello?nombre=Pedro`\).
 
-```markuptext
+```markup
 <form action="..." method="post">
 </form>
 ```
@@ -733,13 +731,13 @@ Existen dos formas de **enviar la información** que se controla con el atributo
 
 Por último, el botón de enviar se puede crear de dos formas:
 
-```markuptext
+```markup
 <input type="submit" value="¡Hola!">
 ```
 
 o
 
-```markuptext
+```markup
 <button type="submit">¡Hola!</button>
 ```
 
