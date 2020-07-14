@@ -223,7 +223,7 @@ Este reto es crear una página con la receta de una ensalada. El resultado final
 
 ![Result](https://s3.amazonaws.com/makeitreal/results/a-delicious-salad.png)
 
-```text
+```markup
 <!-- NOTE: no se cuenta con código base -->
 ```
 
@@ -285,11 +285,11 @@ Este reto es cambiar el color del texto que se encuentra dentro de la etiqueta `
   <head></head>
   <body>
     <h1>¿Qué es una dirección IP?</h1>
-    
-    <p>Una dirección IP es una cadena de texto que identifca a un 
-      computador dentro de una red. Actualmente las direcciones IP 
-      consisten de 4 números (de 0 a 255 cada uno) separados por 
-      punto (.). <span>Ejemplos de direcciones IP incluyen 54.23.172.178 
+
+    <p>Una dirección IP es una cadena de texto que identifca a un
+      computador dentro de una red. Actualmente las direcciones IP
+      consisten de 4 números (de 0 a 255 cada uno) separados por
+      punto (.). <span>Ejemplos de direcciones IP incluyen 54.23.172.178
       o 216.76.234.12</span>.</p>
   </body>
 </html>
@@ -303,7 +303,7 @@ Este reto es cambiar el color del texto que se encuentra dentro de la etiqueta `
 
 Este reto se podía solucionar de varias formas. Primero, era posible encerrar el texto en la etiqueta `<font>`:
 
-```text
+```markuptext
 <font color="#FF0000"><span>...</span></font>
 ```
 
@@ -313,7 +313,7 @@ Recuerda que HTML define la estructura \(los elementos y el contenidos\) de los 
 
 Otra opción era agregar el estilo en el atributo `style` de la etiqueta `span`:
 
-```text
+```markuptext
 <span style="color: red">...</span>
 ```
 
@@ -358,7 +358,7 @@ Este reto es crear un teclado numérico como el que se muestra en la siguiente i
 
 ![Dial pad](https://s3.amazonaws.com/makeitreal/results/dial-pad.png)
 
-```text
+```markuptext
 <!DOCTYPE html>
 <html>
 <head>
@@ -386,7 +386,7 @@ Este reto es crear un teclado numérico como el que se muestra en la siguiente i
 
 Nuestra solución es la siguiente:
 
-```text
+```markuptext
 <!DOCTYPE html>
 <html>
 <head>
@@ -441,7 +441,7 @@ Este reto es crear una lista de contactos como se muestra en la siguiente imagen
    * La primer fila debe estar compuesta por 5 table headers `<th>`
    * Las dos siguientes filas deben estar compuestas por 5 table cells `<td>`
 
-```text
+```markuptext
 <!-- NOTE: no se cuenta con código base -->
 ```
 
@@ -500,11 +500,11 @@ La solución final sería la siguiente:
 ```
 
 **Nota**:   
-  
+
 [`<th>`](https://www.w3schools.com/tags/tag_th.asp) hace referencia`t` tabla, `h` header _encabezado_   
 [`<tr>`](https://www.w3schools.com/tags/tag_tr.asp) hace referencia `t` tabla, `r` row _fila_   
 [`<td>`](https://www.w3schools.com/tags/tag_td.asp) hace referencia `t` tabla, `d` data _dato_  
-  
+
 `td` va anidado dentro de `tr` porque se le está diciendo los _datos_ que compondrán la _fila_; en términos prácticos la cantidad de columnas
 
 
@@ -526,20 +526,20 @@ Este reto es aplicarle estilos al código HTML que se encuentra en el archivo `i
   <body>
     <div>
       <h1>Scrum</h1>
-      <p>En los 80's y gran parte de los 90's se pensaba que 
-        construir software era como construir un edificio o un 
+      <p>En los 80's y gran parte de los 90's se pensaba que
+        construir software era como construir un edificio o un
         puente; que era posible planear todo primero, y luego,
-        escribir el código sería como pegar ladrillos con cemento. 
-        A esa metodología se le llama <strong>en cascada</strong> 
-        (waterfall) y generó inmensas pérdidas para las empresas 
+        escribir el código sería como pegar ladrillos con cemento.
+        A esa metodología se le llama <strong>en cascada</strong>
+        (waterfall) y generó inmensas pérdidas para las empresas
         que la adoptaron.</p>
-      
-      <p>La realidad es que las aplicaciones están en constante 
-        evolución y siempre hay cambios inesperados sobre el camino. 
-        <a href="http://es.wikipedia.org/wiki/Scrum" target="_blank">Scrum</a> 
-        es una metodología de desarrollo ágil para proyectos 
+
+      <p>La realidad es que las aplicaciones están en constante
+        evolución y siempre hay cambios inesperados sobre el camino.
+        <a href="http://es.wikipedia.org/wiki/Scrum" target="_blank">Scrum</a>
+        es una metodología de desarrollo ágil para proyectos
         de software que adopta esa filosofía. En vez de construir
-        software en cascada, se construye en varias iteraciones 
+        software en cascada, se construye en varias iteraciones
         cortas de forma incremental.</p>
     </div>
   </body>
@@ -585,7 +585,7 @@ Nuestra solución es la siguiente:
         /* NOTE: establece el margen para los cuatro lados */
         border-radius:    5px;
         /* NOTE: permite definir qué tan redondeadas serán las esquinas */
-        
+
       }
     </style>
   </head>
@@ -614,7 +614,7 @@ Nuestra solución es la siguiente:
 
 Primero, fíjate que hemos definido los estilos en la etiqueta `style` dentro del `head`. Eso es preferible a definir los **estilos inline** como se muestra en el siguiente ejemplo:
 
-```text
+```markuptext
 <div style="background: #303030; color: #dfdfdf; ...">
    ...
 </div>
@@ -624,7 +624,7 @@ La razón es que con **estilos inline** estamos mezclando el código HTML con el
 
 Segundo, fíjate que le agregamos una clase `article` al `div` y usamos la **clase como selector** de la regla CSS en vez de usar la **etiqueta** como se muestra en el siguiente ejemplo:
 
-```text
+```markup
 div {
   background: #303030;
   color: #dfdfdf;
@@ -636,7 +636,7 @@ La razón es que si después agregamos otro `div` puede que no queramos que teng
 
 ### Algunas preguntas
 
-1. El color de fondo se puede definir con `background` o `background-color`. ¿Por qué?  Sin llegar a transcribir es por una propiedad de "rápida escritura" \([Shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)\) propia de CSS que no solo aplica a _Background_, sino tambien a _Font \_, \_Border_, _Margin and padding_ [respuesta](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties) [complemento](https://developer.mozilla.org/en-US/docs/Web/CSS/background) 
+1. El color de fondo se puede definir con `background` o `background-color`. ¿Por qué?  Sin llegar a transcribir es por una propiedad de "rápida escritura" \([Shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)\) propia de CSS que no solo aplica a _Background_, sino tambien a _Font \_, \_Border_, _Margin and padding_ [respuesta](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties) [complemento](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
 2. ~~_**¿Por qué la fuente de la etiqueta `h1` no cambia a `18px`?**_~~
 3. ¿Cuál es la diferencia entre `padding` y `margin`?
 
@@ -652,7 +652,7 @@ Este reto es crear un formulario como el que se ve en la siguiente imagen:
 
 ![HTML Form](https://s3.amazonaws.com/makeitreal/results/html-form-1.png)
 
-```text
+```markuptext
 <!DOCTYPE html>
 <html>
   <head>
@@ -662,7 +662,7 @@ Este reto es crear un formulario como el que se ve en la siguiente imagen:
     </style>
   </head>
   <body>
-    
+
   </body>
 </html>
 ```
@@ -680,13 +680,13 @@ Ten en cuenta las siguientes recomendaciones:
 
 ![](../../.gitbook/assets/20200714003417.png)
 
-1.  Oprime **Evaluar Solución** cuando hayas terminado.
+3.  Oprime **Evaluar Solución** cuando hayas terminado.
 
 
 
 
 
-```text
+```markuptext
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -715,14 +715,14 @@ Los formularios se usan, generalmente, para obtener información del usuario y e
 
 Existen dos formas de **enviar la información** que se controla con el atributo `method`. Los posibles valores son `get` y `post`.
 
-```text
+```markuptext
 <form action="..." method="get">
 </form>
 ```
 
 * `method="get"` es la opción por defecto y envía la información a través de la URL \(p.e. `/forms/hello?nombre=Pedro`\).
 
-```text
+```markuptext
 <form action="..." method="post">
 </form>
 ```
@@ -733,15 +733,14 @@ Existen dos formas de **enviar la información** que se controla con el atributo
 
 Por último, el botón de enviar se puede crear de dos formas:
 
-```text
+```markuptext
 <input type="submit" value="¡Hola!">
 ```
 
 o
 
-```text
+```markuptext
 <button type="submit">¡Hola!</button>
 ```
 
 Las dos opciones son equivalentes pero es preferible la segunda que es más fácil de estilizar y nos ofrece más opciones como incluir imágenes y anidar otros elementos.
-
