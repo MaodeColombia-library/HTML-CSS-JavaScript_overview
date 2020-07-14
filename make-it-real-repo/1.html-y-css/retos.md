@@ -34,7 +34,7 @@ La solución es la siguiente:
 </html>
 ```
 
-**NOTA**: Existen dos etiquetas que cumplen la misma función de mostrar texto en negrita `<b>` y `<strong>`, pero ahora es más común `<strong>` .
+**NOTA**: Existen dos elemetos que cumplen la misma función de mostrar texto en negrita `<b>` y `<strong>`, pero ahora es más común `<strong>` .
 
 ## Etiquetas
 
@@ -62,7 +62,7 @@ Este reto es modificar el código para obtener el siguiente resultado:
 
 ### **Discusión:** Etiquetas
 
-```html
+```markup
 <!DOCTYPE html>
 <html>
   <head></head>
@@ -74,17 +74,21 @@ Este reto es modificar el código para obtener el siguiente resultado:
 </html>
 ```
 
-Algunas etiquetas necesitan una **etiqueta de cierre** porque pueden contener texto y otras etiquetas anidadas. La **etiqueta de cierre** es muy parecida a una etiqueta, pero lleva un slash `/` antes de la palabra clave \(p.e. `</strong>` es la etiqueta de cierre de `<strong>`\).
+{% hint style="info" %}
+se ha difundido mucho llamar a  etiquetas porque HTML se llama  **HyperText Markup Language** \(‘lenguaje de marcas de hipertexto’\)
+{% endhint %}
 
-> El elemento lo conforman la suma de la etiqueta de apertura, la etiqueta de cierre y el contenido.
-![](../../.gitbook/assets/htmlexp.png)
-[referencia](https://developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/iniciar#Anatomía_de_un_elemento_HTML)
+se ha sifundido mucho llamar a  etiquetas porqueHTML se llama  **HyperText Markup Language** \(‘lenguaje de marcas de hipertexto’\)
 
-Referencia de Elementos HTML en [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) y en [w3schools](https://www.w3schools.com/tags/default.asp)
+> El [elemento](https://developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/iniciar#Anatom%C3%ADa_de_un_elemento_HTML) lo conforman la suma de la **etiqueta de apertura**, la **etiqueta de cierre** y el **contenido**. ![](../../.gitbook/assets/htmlexp.png)
+>
+> HTML también tiene [elementos vacíos](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#Empty_elements) que no siguen este patrón, como por ejemplo el elemento `<img>` 
+>
+> Listado de Elementos HTML [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) y [w3schools](https://www.w3schools.com/tags/default.asp)
 
 ## ¡Hypertexto!
 
-Este reto es que el texto **"Ver más"** dentro de el código sea un vínculo \(link\) que nos lleve a [este enlace](http://blog.makeitreal.camp/html-css).
+Este reto es que el texto **"Ver más"** dentro de el código sea un vínculo \(link\) que nos lleve a este [enlace](http://blog.makeitreal.camp/html-css) \(ver [enlace ](../../post-1/html-y-css-post.md)interno\).
 
 ```markup
 <!DOCTYPE html>
@@ -734,3 +738,4 @@ o
 Las dos opciones son equivalentes pero es preferible la segunda que es más fácil de estilizar y nos ofrece más opciones como incluir imágenes y anidar otros elementos.
 
 HHHHHHHHHHHHHHHHHHHHHH
+
