@@ -75,16 +75,14 @@ Este reto es modificar el código para obtener el siguiente resultado:
 ```
 
 {% hint style="info" %}
-se ha difundido mucho llamar a  etiquetas porque HTML se llama  **HyperText Markup Language** \(‘lenguaje de marcas de hipertexto’\)
+El [elemento](https://developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/iniciar#Anatom%C3%ADa_de_un_elemento_HTML) lo conforman la suma de la **etiqueta de apertura**, la **etiqueta de cierre** y el **contenido**. ![](../../.gitbook/assets/htmlexp.png)
+
+HTML también tiene [elementos vacíos](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#Empty_elements) que no siguen este patrón, como por ejemplo el elemento `<img>`
+
+Listado de Elementos HTML [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) y [w3schools](https://www.w3schools.com/tags/default.asp)
+
+NOTA: se ha difundido mucho llamar a  etiquetas porque HTML se llama  **HyperText Markup Language** \(‘lenguaje de marcas de hipertexto’\)
 {% endhint %}
-
-se ha sifundido mucho llamar a  etiquetas porqueHTML se llama  **HyperText Markup Language** \(‘lenguaje de marcas de hipertexto’\)
-
-> El [elemento](https://developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/iniciar#Anatom%C3%ADa_de_un_elemento_HTML) lo conforman la suma de la **etiqueta de apertura**, la **etiqueta de cierre** y el **contenido**. ![](../../.gitbook/assets/htmlexp.png)
->
-> HTML también tiene [elementos vacíos](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#Empty_elements) que no siguen este patrón, como por ejemplo el elemento `<img>` 
->
-> Listado de Elementos HTML [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) y [w3schools](https://www.w3schools.com/tags/default.asp)
 
 ## ¡Hypertexto!
 
@@ -738,4 +736,3 @@ o
 Las dos opciones son equivalentes pero es preferible la segunda que es más fácil de estilizar y nos ofrece más opciones como incluir imágenes y anidar otros elementos.
 
 HHHHHHHHHHHHHHHHHHHHHH
-
