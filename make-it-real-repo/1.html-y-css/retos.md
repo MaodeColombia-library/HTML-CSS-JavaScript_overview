@@ -680,7 +680,7 @@ Ten en cuenta las siguientes recomendaciones:
 
 ![](../../.gitbook/assets/20200714003417.png)
 
-3.  Oprime **Evaluar Solución** cuando hayas terminado.
+3. Oprime **Evaluar Solución** cuando hayas terminado.
 
 
 
