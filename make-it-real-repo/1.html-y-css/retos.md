@@ -34,7 +34,7 @@ La solución es la siguiente:
 </html>
 ```
 
-**NOTA**: Existen dos etiquetas que cumplen la misma función de mostrar texto en negrita `<b>` y `<strong>`, pero ahora es más común strong.
+**NOTA**: Existen dos etiquetas que cumplen la misma función de mostrar texto en negrita `<b>` y `<strong>`, pero ahora es más común `<strong>` .
 
 ## Etiquetas
 
