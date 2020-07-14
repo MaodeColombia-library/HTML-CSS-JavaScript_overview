@@ -2,7 +2,7 @@
 
 ## ¡Hola HTML!
 
-Este reto es modificar el codigo para que el texto "HTML" aparezca en negrita como se muestra en la siguiente imagen:
+Este reto es modificar el código para que el texto "HTML" aparezca en negrita como se muestra en la siguiente imagen:
 
 ![Hello HTML](https://s3.amazonaws.com/makeitreal/hello-html.png)
 
@@ -34,15 +34,13 @@ La solución es la siguiente:
 </html>
 ```
 
-Existen dos etiquetas que cumplen la misma función de mostrar texto en negrita: `b` y `strong`. Cualquiera de las dos funciona aunque ahora es más común `strong`.
+**NOTA**: Existen dos etiquetas que cumplen la misma función de mostrar texto en negrita `<b>` y `<strong>`, pero ahora es más común strong.
 
 ## Etiquetas
 
 Este reto es modificar el código para obtener el siguiente resultado:
 
 ![Hypertext](https://s3.amazonaws.com/makeitreal/hypertext.png)
-
-**Nota:** Fíjate que la palabra "párrafo" debe estar en negrita en los dos párrafos. El evaluador espera que uses la etiqueta `strong` .
 
 ```markup
 <!DOCTYPE html>
@@ -70,17 +68,19 @@ Este reto es modificar el código para obtener el siguiente resultado:
   <head></head>
   <body>
     <h1>Este es el título</h1>
-
     <p>Este es el primer <strong>párrafo</strong>. </p>
-
     <p>Este es el segundo <strong>párrafo</strong>.</p>
   </body>
 </html>
 ```
 
-HTML está compuesto de etiquetas. Una etiqueta es una palabra clave encerrada entre `<` y `>`.
+~~HTML está compuesto de etiquetas. Una etiqueta es una palabra clave encerrada entre `<` y `>`.~~
 
 Algunas etiquetas necesitan una **etiqueta de cierre** porque pueden contener texto y otras etiquetas anidadas. La **etiqueta de cierre** es muy parecida a una etiqueta, pero lleva un slash `/` antes de la palabra clave \(p.e. `</strong>` es la etiqueta de cierre de `<strong>`\).
+
+> El elemento lo conforman la suma de la etiqueta de apertura, la etiqueta de cierre y el contenido.
+
+![](../../.gitbook/assets/htmlexp.png)
 
 En [este enlace](https://www.w3schools.com/tags/default.asp) puedes encontrar la lista de etiquetas de HTML.
 
@@ -299,7 +299,7 @@ Este reto es cambiar el color del texto que se encuentra dentro de la etiqueta `
 
 1. Realiza el cambio en el código
 
-###  **Discusión:** Cambiando el color del texto
+### **Discusión:** Cambiando el color del texto
 
 Este reto se podía solucionar de varias formas. Primero, era posible encerrar el texto en la etiqueta `<font>`:
 
@@ -335,8 +335,6 @@ Nuestra solución es la siguiente:
   </body>
 </html>
 ```
-
-
 
 La razón por la que usamos una clase \(que llamamos `red`\) como selector, es que si usábamos la etiqueta `span`, eso afectaría a todas las etiquetas `span` del documento. Y eso puede que no sea lo que queramos.
 
@@ -382,7 +380,7 @@ Este reto es crear un teclado numérico como el que se muestra en la siguiente i
 1. En el archivo `index.html` crea una tabla y asígnale la clase `dial` para asignarle los estilos.
 2. Agrega el cuerpo de la tabla para obtener el resultado esperado.
 
-###  **Discusión:** Teclado numérico
+### **Discusión:** Teclado numérico
 
 Nuestra solución es la siguiente:
 
@@ -445,11 +443,9 @@ Este reto es crear una lista de contactos como se muestra en la siguiente imagen
 <!-- NOTE: no se cuenta con código base -->
 ```
 
-###  **Discusión:** Libreta de Contactos
+### **Discusión:** Libreta de Contactos
 
-{% embed url="https://www.youtube.com/watch?v=iaPd094yzok&feature=emb\_logo" %}
-
-
+{% embed url="https://www.youtube.com/watch?v=iaPd094yzok&feature=emb\_logo" caption="" %}
 
 Es mejor aplicar todos los estilos mediante CSS \(como se muestra en la solución\) y no en los atributos de la tabla.
 
@@ -499,15 +495,13 @@ La solución final sería la siguiente:
 </html>
 ```
 
-**Nota**:   
+**Nota**:
 
-[`<th>`](https://www.w3schools.com/tags/tag_th.asp) hace referencia`t` tabla, `h` header _encabezado_   
-[`<tr>`](https://www.w3schools.com/tags/tag_tr.asp) hace referencia `t` tabla, `r` row _fila_   
-[`<td>`](https://www.w3schools.com/tags/tag_td.asp) hace referencia `t` tabla, `d` data _dato_  
+[`<th>`](https://www.w3schools.com/tags/tag_th.asp) hace referencia`t` tabla, `h` header _encabezado_  
+[`<tr>`](https://www.w3schools.com/tags/tag_tr.asp) hace referencia `t` tabla, `r` row _fila_  
+[`<td>`](https://www.w3schools.com/tags/tag_td.asp) hace referencia `t` tabla, `d` data _dato_
 
 `td` va anidado dentro de `tr` porque se le está diciendo los _datos_ que compondrán la _fila_; en términos prácticos la cantidad de columnas
-
-
 
 ## SCRUM
 
@@ -560,7 +554,7 @@ Este reto es aplicarle estilos al código HTML que se encuentra en el archivo `i
    * El `border-radius` es `5px`.
 3. Cuando hayas terminado oprime **Evaluar Solución**.
 
-###  **Discusión:** Scrum
+### **Discusión:** Scrum
 
 Nuestra solución es la siguiente:
 
@@ -636,11 +630,11 @@ La razón es que si después agregamos otro `div` puede que no queramos que teng
 
 ### Algunas preguntas
 
-1. El color de fondo se puede definir con `background` o `background-color`. ¿Por qué?  Sin llegar a transcribir es por una propiedad de "rápida escritura" \([Shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)\) propia de CSS que no solo aplica a _Background_, sino tambien a _Font \_, \_Border_, _Margin and padding_ [respuesta](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties) [complemento](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
+1. El color de fondo se puede definir con `background` o `background-color`. ¿Por qué?  Sin llegar a transcribir es por una propiedad de "rápida escritura" \([Shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)\) propia de CSS que no solo aplica a _Background_, sino tambien a _Font \_, \_Border_, \_Margin and padding_ [respuesta](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties) [complemento](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
 2. ~~_**¿Por qué la fuente de la etiqueta `h1` no cambia a `18px`?**_~~
 3. ¿Cuál es la diferencia entre `padding` y `margin`?
 
-   [repuesta](https://www.cssblog.es/diferencia-entre-margin-y-padding/)  
+   [repuesta](https://www.cssblog.es/diferencia-entre-margin-y-padding/)
 
 ![](../../.gitbook/assets/margin-padding-diferencia1.png)
 
@@ -677,12 +671,10 @@ Ten en cuenta las siguientes recomendaciones:
 
 1. Escribe tu solución. Usa una etiqueta `h1` para el encabezado y crea el formulario con el campo de texto y el botón para enviarlo.
 2. Oprime el botón **Preview** y prueba que el formulario funcione: escribe tu nombre y oprime el botón **¡Hola!**. Deberá aparecer...
-![](../../.gitbook/assets/20200714003417.png)
+
+   ![](../../.gitbook/assets/20200714003417.png)
+
 3. Oprime **Evaluar Solución** cuando hayas terminado.
-
-
-
-
 
 ```markup
 <!DOCTYPE html>
@@ -744,3 +736,4 @@ o
 Las dos opciones son equivalentes pero es preferible la segunda que es más fácil de estilizar y nos ofrece más opciones como incluir imágenes y anidar otros elementos.
 
 HHHHHHHHHHHHHHHHHHHHHH
+
