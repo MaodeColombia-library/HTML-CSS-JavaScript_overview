@@ -34,7 +34,9 @@ La solución es la siguiente:
 </html>
 ```
 
-**NOTA**: Existen dos elemetos que cumplen la misma función de mostrar texto en negrita `<b>` y `<strong>`, pero ahora es más común `<strong>` .
+{% hint style="info" %}
+Existen dos elementos que cumplen la misma función de mostrar texto en negrita `<b>` y `<strong>`, pero ahora es más común `<strong>` .
+{% endhint %}
 
 ## Etiquetas
 
@@ -78,15 +80,19 @@ Este reto es modificar el código para obtener el siguiente resultado:
 El [elemento](https://developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/iniciar#Anatom%C3%ADa_de_un_elemento_HTML) lo conforman la suma de la **etiqueta de apertura**, la **etiqueta de cierre** y el **contenido**. ![](../../.gitbook/assets/htmlexp.png)
 
 HTML también tiene [elementos vacíos](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#Empty_elements) que no siguen este patrón, como por ejemplo el elemento `<img>`
+{% endhint %}
 
+{% hint style="warning" %}
+Se ha difundido mucho llamar a etiquetas porque el acrónimo de HTML es "HyperText **Markup** Language" "lenguaje de **marcas-marquillas-etiquetas** de hipertexto"
+{% endhint %}
+
+{% hint style="info" %}
 Listado de Elementos HTML [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) y [w3schools](https://www.w3schools.com/tags/default.asp)
-
-NOTA: se ha difundido mucho llamar a  etiquetas porque HTML se llama  **HyperText Markup Language** \(‘lenguaje de marcas de hipertexto’\)
 {% endhint %}
 
 ## ¡Hypertexto!
 
-Este reto es que el texto **"Ver más"** dentro de el código sea un vínculo \(link\) que nos lleve a este [enlace](http://blog.makeitreal.camp/html-css) \(ver [enlace ](../../post-1/html-y-css-post.md)interno\).
+El reto es que el texto **"Ver más"** dentro de el código sea un vínculo \(link\) que nos lleve a este [enlace](http://blog.makeitreal.camp/html-css) \(ver [enlace ](../../post-1/html-y-css-post.md)interno\).
 
 ```markup
 <!DOCTYPE html>
@@ -108,7 +114,7 @@ Este reto es que el texto **"Ver más"** dentro de el código sea un vínculo \(
 ### Instrucciones
 
 1. Abre el enlace y copia la URL.
-2. Identifica el texto **Ver más** en el codigo y agrega el link.
+2. Identifica el texto **Ver más** en el código y agrega el link.
 
 ### **Discusión:** ¡Hypertexto!
 
@@ -131,46 +137,40 @@ La solución es
 </html>
 ```
 
-[Hypertexto](https://www.w3.org/WhatIs.html) \(en inglés hypertext\) significa: texto con vínculos a otros textos. De ahí vienen el nombre **HTML \(Hyper Text Markup Language\)**: un **lenguaje** que nos permite definir la estructura \(**markup**\) de textos \(documentos\) con vínculos a otros documentos \(**hypertexto**\).
+{% hint style="info" %}
+[Hypertexto](https://www.w3.org/WhatIs.html) \(en inglés hypertext\) significa: texto con vínculos a otros textos, de ahí vienen el nombre **HTML \(Hyper Text Markup Language\)**: un **lenguaje** que nos permite definir la estructura \(**markup**\) de textos \(documentos\) con vínculos a otros documentos \(**hypertexto**\).
+{% endhint %}
 
+{% hint style="info" %}
 **Dato curioso:** Técnicamente deberíamos cambiarle el nombre a HTML por HMML \(Hyper **Media** Markup Language\) porque ahora HTML soporta no solo texto, sino imágenes, audio y video. Pero al parecer nadie ha propuesto el cambio y la verdad no valdría la pena en este momento ;\)
+{% endhint %}
 
 ## El título de la página
 
-Este reto es agregarle el título "El movimiento open source" al documento HTML que se encuentra en el codigo como se muestra en la siguiente imagen:
+Este reto es agregarle el título "El movimiento open source" al documento HTML que se encuentra en el código como se muestra en la siguiente imagen:
 
 ![Open source](https://s3.amazonaws.com/makeitreal/results/open-source.png)
 
 ```markup
 <!DOCTYPE html>
 <html>
-  <head>
-
-  <head>
-<title>El movimiento open source</title>
-</head>
-
-  </head>
+  <head></head>
   <body>
-    <h1>Open Source</h1>
-    <p>Open source (código abierto) es un movimiento que se originó por la
-      ambigüedad del término <em>free software (software libre)</em>. El
-      problema es que en Inglés la palabra <em>free</em> también significa
-      <em>gratis</em>, pero open source no necesariamente es gratis.</p>
-
-    <p>El objetivo del movimiento es que todos tengan la capacidad de ver el
-      código del software que están adquiriendo. Pero existe mucho software
-      open source que no es gratis, especialmente para uso comercial. Un
-      ejemplo es <a href="https://source.android.com/">Android</a>, que
-      aunque es un proyecto open source, no significa que cualquiera pueda
-      comercializar teléfonos con ese sistema operativo.</p>
+    <h1>HTML y CSS</h1>
+    
+    <p>Para hacer páginas Web necesitas aprender dos lenguajes: 
+      HTML y CSS. Estos son los lenguajes que los navegadores 
+      (Firefox, Chrome, Internet Explorer) entienden e interpretan 
+      para mostrarte lo que ves cuando abres alguna página.</p>
+    
+    Ver más
   </body>
 </html>
 ```
 
 ### Instrucciones
 
-1. Agrega el título "El movimiento open source" al codigo.
+1. Agrega el título "El movimiento open source" al código.
 
 ### **Discusión:** El título de la página
 
@@ -199,7 +199,7 @@ La solución es
 </html>
 ```
 
-Un documento HTML tiene dos grandes secciones: el encabezado \(`<head>`\) y el cuerpo \(`<body>`\) como se muestra en el siguiente ejemplo:
+Un documento HTML tiene dos grandes secciones: el encabezado `<head>` y el cuerpo `<body>` como se muestra en el siguiente ejemplo:
 
 ```markup
 <!DOCTYPE html>
@@ -736,3 +736,4 @@ o
 Las dos opciones son equivalentes pero es preferible la segunda que es más fácil de estilizar y nos ofrece más opciones como incluir imágenes y anidar otros elementos.
 
 HHHHHHHHHHHHHHHHHHHHHH
+
