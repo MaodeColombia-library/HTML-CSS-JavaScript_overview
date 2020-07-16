@@ -157,12 +157,12 @@ Este reto es agregarle el título "El movimiento open source" al documento HTML 
   <head></head>
   <body>
     <h1>HTML y CSS</h1>
-    
-    <p>Para hacer páginas Web necesitas aprender dos lenguajes: 
-      HTML y CSS. Estos son los lenguajes que los navegadores 
-      (Firefox, Chrome, Internet Explorer) entienden e interpretan 
+
+    <p>Para hacer páginas Web necesitas aprender dos lenguajes:
+      HTML y CSS. Estos son los lenguajes que los navegadores
+      (Firefox, Chrome, Internet Explorer) entienden e interpretan
       para mostrarte lo que ves cuando abres alguna página.</p>
-    
+
     Ver más
   </body>
 </html>
@@ -198,7 +198,7 @@ La solución es
   </body>
 </html>
 ```
-
+{% hint style="info" %}
 Un documento HTML tiene dos grandes secciones: el encabezado `<head>` y el cuerpo `<body>` como se muestra en el siguiente ejemplo:
 
 ```markup
@@ -216,6 +216,8 @@ Un documento HTML tiene dos grandes secciones: el encabezado `<head>` y el cuerp
 La primera línea `<!DOCTYPE html>` le dice al navegador que estamos usando la última versión de HTML, HTML5. Un documento HTML siempre empieza con la etiqueta `<html>`.
 
 En el `<head>` va información que no es visible en la pantalla como el **título del documento**, referencia a otros archivos, etc. En el `<body>` van los elementos visibles en la pantalla.
+{% endhint %}
+
 
 ## Una deliciosa receta
 
@@ -736,4 +738,3 @@ o
 Las dos opciones son equivalentes pero es preferible la segunda que es más fácil de estilizar y nos ofrece más opciones como incluir imágenes y anidar otros elementos.
 
 HHHHHHHHHHHHHHHHHHHHHH
-
