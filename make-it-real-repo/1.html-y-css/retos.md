@@ -145,6 +145,20 @@ La solución es
 **Dato curioso:** Técnicamente deberíamos cambiarle el nombre a HTML por HMML \(Hyper **Media** Markup Language\) porque ahora HTML soporta no solo texto, sino imágenes, audio y video. Pero al parecer nadie ha propuesto el cambio y la verdad no valdría la pena en este momento ;\)
 {% endhint %}
 
+{% hint style="info" %}
+ `<a>` significa ancla
+
+* **href**: El valor de este atributo indica la dirección web a la que se quiere que apunte el enlace, que será hacia donde nos lleve el navegador cuando se hace clic sobre el elemento. Por ejemplo, `href="https://www.mozilla.org/"`.
+* **title**: El atributo title añade información adicional sobre el enlace, como puede ser el título de la página que vinculas, por ejemplo, `title="La página de inicio de Mozilla"` es la información que aparecerá cuando se le pase el ratón por encima.
+* **target**: El atributo target especifica el contexto de navegación que va a usar para mostrar el enlace. Por ejemplo, `target="_blank"` mostrará el enlace en una pestaña nueva
+
+```markup
+<p>A link to my favorite <a href="https://www.mozilla.org/" title="La página de inicio de Mozilla" target="_black">website</a>.</p>
+```
+
+[referencia de mozilla](https://developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/iniciar#Aprendizaje_activo_A%C3%B1adir_atributos_a_un_elemento//)
+{% endhint %}
+
 ## El título de la página
 
 Este reto es agregarle el título "El movimiento open source" al documento HTML que se encuentra en el código como se muestra en la siguiente imagen:
@@ -198,6 +212,7 @@ La solución es
   </body>
 </html>
 ```
+
 {% hint style="info" %}
 Un documento HTML tiene dos grandes secciones: el encabezado `<head>` y el cuerpo `<body>` como se muestra en el siguiente ejemplo:
 
@@ -218,7 +233,6 @@ La primera línea `<!DOCTYPE html>` le dice al navegador que estamos usando la �
 En el `<head>` va información que no es visible en la pantalla como el **título del documento**, referencia a otros archivos, etc. En el `<body>` van los elementos visibles en la pantalla.
 {% endhint %}
 
-
 ## Una deliciosa receta
 
 Este reto es crear una página con la receta de una ensalada. El resultado final debe quedar igual al que se muestra a continuación:
@@ -231,7 +245,7 @@ Este reto es crear una página con la receta de una ensalada. El resultado final
 
 ### Instrucciones
 
-1. En el archivo `index.html` agrega la estructura básica que debe tener todo HTML.
+1. Agrega la estructura básica que debe tener todo HTML.
 2. El título de la página debe ser `Mis Recetas`.
 3. La imagen se encuentra en [https://s3.amazonaws.com/makeitreal/salad.png](https://s3.amazonaws.com/makeitreal/salad.png).
 4. Utiliza las etiquetas `h1`, `h2`, `img`, `ul`, `li`, y `p` para crear el contenido de la página.
@@ -269,11 +283,17 @@ Este reto es crear una página con la receta de una ensalada. El resultado final
 
 HTML permitiría definir la estructura de un documento, es decir, encabezados, párrafos, listas, etc. \(en ese momento no se podían incluir imágenes, video, o audio\). Pero lo realmente novedoso era que HTML permitiría incluir vínculos a otros documentos, creando así una **red de documentos interconectados**.Generalmente, el código HTML \(Hyper Text Markup Language\) viaja a través de HTTP \(Hyper Text Transfer Protocol\). Pero es posible crear un archivo de texto con extensión `.html` y abrirlo en un navegador directamente.
 
-**Nota:** La etiqueta `<meta charset="UTF-8">` dentro de `<head>` se usa para que las tildes funcionen.
+{% hint style="info" %}
+ La etiqueta `<meta charset="UTF-8">` dentro de `<head>` se usa para que las tildes funcionen.
+{% endhint %}
 
-**Nota:** El _atributo_ `alt` del _elemento_ `<img>` define el texto alternativo que describe la imagen, texto que los usuarios verán si la URL de la imagen es errónea o la imagen tiene un formato no soportado o si la imagen aún no se ha descargado.
+{% hint style="info" %}
+El _atributo_ `alt` del _elemento_ `<img>` define el texto alternativo que describe la imagen, texto que los usuarios verán si la URL de la imagen es errónea o la imagen tiene un formato no soportado o si la imagen aún no se ha descargado.
 
 [referencia a mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
+{% endhint %}
+
+
 
 ## Cambiando el color del texto
 
@@ -305,11 +325,13 @@ Este reto es cambiar el color del texto que se encuentra dentro de la etiqueta `
 
 Este reto se podía solucionar de varias formas. Primero, era posible encerrar el texto en la etiqueta `<font>`:
 
+{% hint style="danger" %}
 ```markup
 <font color="#FF0000"><span>...</span></font>
 ```
 
 Esta etiqueta ha sido removida de HTML5 y **no se debe usar, nunca nunca**. La razón por la que el reto la acepta es que varios navegadores aún la soportan.
+{% endhint %}
 
 Recuerda que HTML define la estructura \(los elementos y el contenidos\) de los documentos, no la apariencia. Para eso se usa [CSS \(Cascading Style Sheets\)](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada), para aplicarle el estilo a los elementos del documento.
 
@@ -343,6 +365,10 @@ La razón por la que usamos una clase \(que llamamos `red`\) como selector, es q
 #### La etiqueta span
 
 La etiqueta `<span>` se usa para agrupar texto y aplicarle estilos, o para modificarlo usando JavaScript.
+
+{% hint style="info" %}
+`<span>` es muy parecido a un elemento `<div>`, pero `<div>` es un _elemento de nivel de bloque_, mientras que `<span>` es un _elemento en línea_.
+{% endhint %}
 
 #### Formas de definir el color
 
@@ -381,6 +407,7 @@ Este reto es crear un teclado numérico como el que se muestra en la siguiente i
 
 1. En el archivo `index.html` crea una tabla y asígnale la clase `dial` para asignarle los estilos.
 2. Agrega el cuerpo de la tabla para obtener el resultado esperado.
+3. Utiliza las etiquetas `<table>`, `<tr>` y `<td>` para crear el contenido de la página.
 
 ### **Discusión:** Teclado numérico
 
@@ -432,7 +459,7 @@ Este reto es crear una lista de contactos como se muestra en la siguiente imagen
 
 ### Instrucciones
 
-1. En el archivo `index.html` agrega la estructura que todo HTML debe tener.
+1. Agrega la estructura que todo HTML debe tener.
 2. El título de la página debe ser **Libreta de Contactos**.
 3. El archivo HTML debe tener una tabla que cumpla con las siguientes condiciones:
    * La tabla debe tener bordes de 1px como se muestra en la imagen.
@@ -447,11 +474,7 @@ Este reto es crear una lista de contactos como se muestra en la siguiente imagen
 
 ### **Discusión:** Libreta de Contactos
 
-{% embed url="https://www.youtube.com/watch?v=iaPd094yzok&feature=emb\_logo" caption="" %}
-
-Es mejor aplicar todos los estilos mediante CSS \(como se muestra en la solución\) y no en los atributos de la tabla.
-
-La solución final sería la siguiente:
+Nuestra solución es
 
 ```markup
 <!DOCTYPE html>
@@ -497,17 +520,25 @@ La solución final sería la siguiente:
 </html>
 ```
 
-**Nota**:
 
+
+{% embed url="https://www.youtube.com/watch?v=iaPd094yzok&feature=emb\_logo" caption="" %}
+
+{% hint style="warning" %}
+Recuerda, es mejor aplicar todos los estilos mediante CSS \(como se muestra en la solución\) y no en los atributos de la tabla.
+{% endhint %}
+
+{% hint style="info" %}
 [`<th>`](https://www.w3schools.com/tags/tag_th.asp) hace referencia`t` tabla, `h` header _encabezado_  
 [`<tr>`](https://www.w3schools.com/tags/tag_tr.asp) hace referencia `t` tabla, `r` row _fila_  
 [`<td>`](https://www.w3schools.com/tags/tag_td.asp) hace referencia `t` tabla, `d` data _dato_
 
 `td` va anidado dentro de `tr` porque se le está diciendo los _datos_ que compondrán la _fila_; en términos prácticos la cantidad de columnas
+{% endhint %}
 
 ## SCRUM
 
-Este reto es aplicarle estilos al código HTML que se encuentra en el archivo `index.html` para que se vea como en la siguiente imagen:
+Este reto es aplicarle estilos al código HTML que se encuentra en el codigo para que se vea como en la siguiente imagen:
 
 ![Scrum](https://s3.amazonaws.com/makeitreal/results/scrum.png)
 
@@ -554,7 +585,6 @@ Este reto es aplicarle estilos al código HTML que se encuentra en el archivo `i
    * El padding es de `20px`.
    * El margin es de `40px`.
    * El `border-radius` es `5px`.
-3. Cuando hayas terminado oprime **Evaluar Solución**.
 
 ### **Discusión:** Scrum
 
@@ -581,7 +611,6 @@ Nuestra solución es la siguiente:
         /* NOTE: establece el margen para los cuatro lados */
         border-radius:    5px;
         /* NOTE: permite definir qué tan redondeadas serán las esquinas */
-
       }
     </style>
   </head>
@@ -676,7 +705,7 @@ Ten en cuenta las siguientes recomendaciones:
 
    ![](../../.gitbook/assets/20200714003417.png)
 
-3. Oprime **Evaluar Solución** cuando hayas terminado.
+### **Discusión:** Salúdame
 
 ```markup
 <!DOCTYPE html>
@@ -691,7 +720,7 @@ Ten en cuenta las siguientes recomendaciones:
   </head>
   <body>
     <h1>¿Cómo te llamas ?</h1>
-    <form class="form_example" action=/forms/hello>
+    <form class="form_example" action=/forms/hello method="get">
       <!-- NOTE: action es la URL que procesa el envío del formulario <form> -->
       <input type="text" name="nombre">
       <!-- NOTE: uns variante interesante es <input type="text" name="name" required  minlength="4" maxlength="8" size="100">-->
@@ -701,27 +730,37 @@ Ten en cuenta las siguientes recomendaciones:
 </html>
 ```
 
-### **Discusión:** Salúdame
+¡Excelente trabajo Maker!  
+  
+Los formularios se usan generalmente para obtener información del usuario y enviarla al servidor. El atributo `name` nos permite identificar en el servidor los valores que ingresa el usuario en cada campo.
 
-Los formularios se usan, generalmente, para obtener información del usuario y enviarla al servidor. El atributo `name` nos permite identificar en el servidor los valores que ingresa el usuario en cada campo.
+![](../../.gitbook/assets/imagen%20%2812%29.png)
+
+
 
 Existen dos formas de **enviar la información** que se controla con el atributo `method`. Los posibles valores son `get` y `post`.
-
-```markup
-<form action="..." method="get">
-</form>
-```
 
 * `method="get"` es la opción por defecto y envía la información a través de la URL \(p.e. `/forms/hello?nombre=Pedro`\).
 
 ```markup
-<form action="..." method="post">
+<form action="..." method="get">
+/*...*/
 </form>
 ```
 
 * `method="post"` envía la información en el cuerpo del mensaje HTTP y por lo tanto no es visible en la URL.
 
+```markup
+<form action="..." method="post">
+/*...*/
+</form>
+```
+
+{% hint style="info" %}
 ¿Qué opción usar? En general la recomendación es usar `method="post"` a menos de que encuentres una buena razón para usar `GET` \(p.e. los formularios para buscar y filtrar datos son un buen caso de uso\).
+{% endhint %}
+
+
 
 Por último, el botón de enviar se puede crear de dos formas:
 
@@ -737,4 +776,350 @@ o
 
 Las dos opciones son equivalentes pero es preferible la segunda que es más fácil de estilizar y nos ofrece más opciones como incluir imágenes y anidar otros elementos.
 
-HHHHHHHHHHHHHHHHHHHHHH
+## El colegio y la creatividad
+
+En este reto encontrarás dos archivos: `index.html` y `style.css`, en `style.css` se encuentran los estilos que le queremos aplicar al archivo `index.html`, pero aún no están conectados.
+
+Tu misión en este reto es crear la referencia en el HTML al archivo CSS.
+
+{% tabs %}
+{% tab title="index.html" %}
+```markup
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>El efecto del colegio en la creatividad</title>
+</head>
+<body>
+  <header>
+    <div>
+      <div class="row">
+        <h1>El efecto del colegio en la creatividad</h1>
+        <p>Es hora de repensar los principios fundamentales bajo los que estamos educando a nuestros hijos.</p>
+      </div>
+    </div>
+  </header>
+  <div class="details row">
+    <div class="details-author"><img src="https://s3.amazonaws.com/makeitreal/creativity-post-assets/german.jpg"> <span>Germán Escobar</span></div><div class="details-date">13 de Junio del 2013</div>
+  </div>
+  <article class="row first">
+    <p>Talvez el estudio más importante sobre creatividad realizado hasta ahora ha sido el de <a href="http://en.wikipedia.org/wiki/Mihaly_Csikszentmihalyi" target="_blank">Mihaly Csikszentmihalyi</a> resumido en su libro <a href="http://www.amazon.com/Creativity-Psychology-Discovery-Invention-ebook/dp/B000TG1X9C/ref=tmm_kin_title_0?ie=UTF8&qid=1371227982&sr=8-1" target="_blank">“Creatividad: Flujo y la Sicología del Descubrimiento e Invención”</a> que fue publicado por primera vez en el 96’. El estudio se basa en 91 entrevistas a personas creativas, reconocidas internacionalmente, cuyo trabajo ha impactado de una u otra forma nuestras vidas.</p>
+
+    <p>Entre los diversos hallazgos hay uno que llama especialmente la atención: el efecto del colegio sobre las vidas de los entrevistados. El siguiente extracto del libro resume el resultado:</p>
+
+    <blockquote>"Es extraño el poco efecto que el colegio -incluso el bachillerato- parece haber tenido en la vida de personas creativas. Muchas veces uno siente, si algo, que el colegio amenazó con extinguir el interés y la curiosidad que el niño había descubierto fuera de las paredes. ¿Qué tanto contribuyeron los colegios a los logros de Einstein, Picasso, o T.S. Eliot? El registro es bastante sombrío, especialmente considerando todo el esfuerzo, los recursos, y la esperanza que hemos puesto en nuestro sistema de educación formal."</blockquote>
+
+    <p>Lo verdaderamente extraño es que el autor le haya parecido extraño ese resultado. Pero recordemos que no fue sino hasta el 2006 -cuando Sir Ken Robinson dio la popular y polémica charla en TED sobre cómo los colegios matan la creatividad- que la percepción de los colegios cambió.</p>
+  </article>
+
+  <div class="video">
+    <div class="quote"></div>
+    <iframe src="https://embed-ssl.ted.com/talks/lang/es/ken_robinson_says_schools_kill_creativity.html" width="640" height="360" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+
+  <article class="row">
+    <p>¿Cómo lograron estas personas mantener su creatividad durante los oscuros años de colegio? Hay diferentes respuestas. Algunos mencionan a profesores individuales que los inspiraron, o que notaron y promovieron sus habilidades con un trato especial. Pero la gran mayoría no tiene ningún recuerdo de algún profesor que los haya impactado. Para muchos fueron años difíciles de soledad y rechazo que utilizaron para cultivar sus habilidades.</p>
+
+    <p>Tampoco es de extrañar que ninguno de los entrevistados haya sido popular en el colegio. Ser popular es un trabajo de tiempo completo que requiere adaptarse a un círculo monocromático de amistades al punto de renunciar a su propia identidad. Y todavía hay algunos que no logran entender cómo es que todos terminan vistiéndose, peinándose y hablando de la misma forma. ¿Por qué no les enseñamos a nuestros hijos que está bien ser diferentes? ¿Que no hay necesidad de encajar? ¿Que el colegio no es el mundo real y sólo es una sociedad artificial creada con el propósito de dejar trabajar a los adultos mientras ellos llegan a una edad productiva?</p>
+
+    <p>Lo más triste, como lo articula Paul Graham en su ensayo <a href="http://www.paulgraham.com/nerds.html" target="_blank">“Por qué los nerdos son impopulares”</a>, es que los jóvenes que no se adaptan se sienten miserables. Sienten que algo está mal con ellos.</p>
+
+    <p>Si algún adulto volviera al colegio no le importaría lo que sus compañeros pensaran. No intentaría adaptarse porque se daría cuenta de lo artificial del contexto. Pero para los jóvenes ese es el mundo real. Y nadie les dice lo contrario.</p>
+
+    <p>Tiene sentido que ninguna de las personas creativas del estudio haya sido popular en el colegio. Son personas que no se adaptan. Al contrario, son las que desafían el status quo, las que toman riesgos, las se apasionan por el aprendizaje, las que rompen paradigmas, y lo más importante, las que nunca dejan de ser curiosas.</p>
+
+    <p>Ese es el problema del colegio. El alumno inteligente y estudioso lo odia porque su condición lo hace impopular. Y el popular también lo odia porque lo obligan a estudiar, distrayéndolo de su objetivo principal. No es interesante para ninguno.</p>
+  </article>
+</body>
+</html>
+```
+{% endtab %}
+
+{% tab title="style.css" %}
+```markup
+html, body, header { height: 100%; }
+body {
+  color: #303030;
+  font: 18px/28px Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+.row {
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background: url('https://s3.amazonaws.com/makeitreal/creativity-post-assets/post2-bg.jpg') no-repeat 50%;
+  background-size: cover;
+  color: white;
+}
+header > div {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+header h1 {
+  line-height: 1.2;
+  text-shadow: -2px 2px 5px #000;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 21px;
+  font-weight: 300;
+  text-shadow: -1px 1px 5px #000;
+  margin: 0;
+}
+
+.details { 
+  margin-top: 40px; 
+  color: #666;
+}
+.details-author { 
+  float: left;
+  font-size: 21px;
+}
+.details-author img {
+  width: 50px;
+  border-radius: 25px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.details-date {
+  float: right;
+  margin-top: 10px;
+}
+
+article.first { margin-top: 140px; }
+article p { margin-bottom: 28px; }
+blockquote {
+  color: #666;
+  font-style: italic;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.video {
+  background: black;
+  text-align: center;
+  padding: 40px 0 30px;
+  margin: 60px 0;
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### Instrucciones
+
+1. Oprime el botón **Preview** para ver el estado actual.
+2. Incluye la referencia al CSS en `index.html`. Asume que el archivo `style.css` está en la misma carpeta que el archivo `index.html`.
+3. Verifica que se hayan aplicado correctamente los estilos oprimiendo nuevamente **Preview**.
+4. Oprime **Evaluar Solución** cuando hayas terminado.
+
+###  **Discusión:** El colegio y la creatividad
+
+{% tabs %}
+{% tab title="index.html" %}
+```markup
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>El efecto del colegio en la creatividad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <div class="row">
+        <h1>El efecto del colegio en la creatividad</h1>
+        <p>Es hora de repensar los principios fundamentales bajo los que estamos educando a nuestros hijos.</p>
+      </div>
+    </div>
+  </header>
+  <div class="details row">
+    <div class="details-author"><img src="https://s3.amazonaws.com/makeitreal/creativity-post-assets/german.jpg"> <span>Germán Escobar</span></div><div class="details-date">13 de Junio del 2013</div>
+  </div>
+  <article class="row first">
+    <p>Talvez el estudio más importante sobre creatividad realizado hasta ahora ha sido el de <a href="http://en.wikipedia.org/wiki/Mihaly_Csikszentmihalyi" target="_blank">Mihaly Csikszentmihalyi</a> resumido en su libro <a href="http://www.amazon.com/Creativity-Psychology-Discovery-Invention-ebook/dp/B000TG1X9C/ref=tmm_kin_title_0?ie=UTF8&qid=1371227982&sr=8-1" target="_blank">“Creatividad: Flujo y la Sicología del Descubrimiento e Invención”</a> que fue publicado por primera vez en el 96’. El estudio se basa en 91 entrevistas a personas creativas, reconocidas internacionalmente, cuyo trabajo ha impactado de una u otra forma nuestras vidas.</p>
+
+    <p>Entre los diversos hallazgos hay uno que llama especialmente la atención: el efecto del colegio sobre las vidas de los entrevistados. El siguiente extracto del libro resume el resultado:</p>
+
+    <blockquote>"Es extraño el poco efecto que el colegio -incluso el bachillerato- parece haber tenido en la vida de personas creativas. Muchas veces uno siente, si algo, que el colegio amenazó con extinguir el interés y la curiosidad que el niño había descubierto fuera de las paredes. ¿Qué tanto contribuyeron los colegios a los logros de Einstein, Picasso, o T.S. Eliot? El registro es bastante sombrío, especialmente considerando todo el esfuerzo, los recursos, y la esperanza que hemos puesto en nuestro sistema de educación formal."</blockquote>
+
+    <p>Lo verdaderamente extraño es que el autor le haya parecido extraño ese resultado. Pero recordemos que no fue sino hasta el 2006 -cuando Sir Ken Robinson dio la popular y polémica charla en TED sobre cómo los colegios matan la creatividad- que la percepción de los colegios cambió.</p>
+  </article>
+
+  <div class="video">
+    <div class="quote"></div>
+    <iframe src="https://embed-ssl.ted.com/talks/lang/es/ken_robinson_says_schools_kill_creativity.html" width="640" height="360" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+
+  <article class="row">
+    <p>¿Cómo lograron estas personas mantener su creatividad durante los oscuros años de colegio? Hay diferentes respuestas. Algunos mencionan a profesores individuales que los inspiraron, o que notaron y promovieron sus habilidades con un trato especial. Pero la gran mayoría no tiene ningún recuerdo de algún profesor que los haya impactado. Para muchos fueron años difíciles de soledad y rechazo que utilizaron para cultivar sus habilidades.</p>
+
+    <p>Tampoco es de extrañar que ninguno de los entrevistados haya sido popular en el colegio. Ser popular es un trabajo de tiempo completo que requiere adaptarse a un círculo monocromático de amistades al punto de renunciar a su propia identidad. Y todavía hay algunos que no logran entender cómo es que todos terminan vistiéndose, peinándose y hablando de la misma forma. ¿Por qué no les enseñamos a nuestros hijos que está bien ser diferentes? ¿Que no hay necesidad de encajar? ¿Que el colegio no es el mundo real y sólo es una sociedad artificial creada con el propósito de dejar trabajar a los adultos mientras ellos llegan a una edad productiva?</p>
+
+    <p>Lo más triste, como lo articula Paul Graham en su ensayo <a href="http://www.paulgraham.com/nerds.html" target="_blank">“Por qué los nerdos son impopulares”</a>, es que los jóvenes que no se adaptan se sienten miserables. Sienten que algo está mal con ellos.</p>
+
+    <p>Si algún adulto volviera al colegio no le importaría lo que sus compañeros pensaran. No intentaría adaptarse porque se daría cuenta de lo artificial del contexto. Pero para los jóvenes ese es el mundo real. Y nadie les dice lo contrario.</p>
+
+    <p>Tiene sentido que ninguna de las personas creativas del estudio haya sido popular en el colegio. Son personas que no se adaptan. Al contrario, son las que desafían el status quo, las que toman riesgos, las se apasionan por el aprendizaje, las que rompen paradigmas, y lo más importante, las que nunca dejan de ser curiosas.</p>
+
+    <p>Ese es el problema del colegio. El alumno inteligente y estudioso lo odia porque su condición lo hace impopular. Y el popular también lo odia porque lo obligan a estudiar, distrayéndolo de su objetivo principal. No es interesante para ninguno.</p>
+  </article>
+</body>
+</html>
+
+```
+{% endtab %}
+
+{% tab title="style.css" %}
+```markup
+html, body, header { height: 100%; }
+body {
+  color: #303030;
+  font: 18px/28px Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+.row {
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background: url('https://s3.amazonaws.com/makeitreal/creativity-post-assets/post2-bg.jpg') no-repeat 50%;
+  background-size: cover;
+  color: white;
+}
+header > div {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+header h1 {
+  line-height: 1.2;
+  text-shadow: -2px 2px 5px #000;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 21px;
+  font-weight: 300;
+  text-shadow: -1px 1px 5px #000;
+  margin: 0;
+}
+
+.details {
+  margin-top: 40px;
+  color: #666;
+}
+.details-author {
+  float: left;
+  font-size: 21px;
+}
+.details-author img {
+  width: 50px;
+  border-radius: 25px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.details-date {
+  float: right;
+  margin-top: 10px;
+}
+
+article.first { margin-top: 140px; }
+article p { margin-bottom: 28px; }
+blockquote {
+  color: #666;
+  font-style: italic;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.video {
+  background: black;
+  text-align: center;
+  padding: 40px 0 30px;
+  margin: 60px 0;
+}
+
+```
+{% endtab %}
+{% endtabs %}
+
+{% hint style="info" %}
+Es una buena práctica separar el código CSS y HTML en archivos diferentes.
+{% endhint %}
+
+Cuando creas referencias a otros archivos \(imágenes, HTML, CSS, JavaScript, etc.\), puedes hacerlo de dos formas: usando **rutas relativas** \(relative paths\), o **rutas absolutas** \(absolute paths\).
+
+Las **rutas relativas** se usan cuando el archivo se encuentra en el mismo servidor y  usualmente se espera que `style.css` esté en la misma carpeta que el archivo HTML. Veamos otros ejemplos de **rutas relativas**:
+
+![](../../.gitbook/assets/imagen%20%2810%29.png)
+
+```markup
+<link rel="stylesheet" href="style.css">
+```
+
+Usualmente los archivos que requieren referenciar no están dentro de la misma carpeta, están en un **nivel jerárquico inferior**, por ejemplo la **ruta relativa** al archivo `style.css` que se encuentra dentro de la carpeta `css` sería
+
+![](../../.gitbook/assets/imagen%20%284%29.png)
+
+```markup
+<link rel="stylesheet" href="css/style.css">
+```
+
+otro ejemplo del mismo tipo,  link al archivo `about.html` que se encuentra dentro de la carpeta `company`
+
+![](../../.gitbook/assets/imagen%20%287%29.png)
+
+
+
+```markup
+<a href="company/about.html">Acerca de Nosotros</a>
+```
+
+tambien se presenta, los archivos que requieren referenciar están en un **nivel jerárquico superior**, entonces la **ruta relativa** al archivo `vaca.png` que se encuentra dentro de la carpeta `image`sería
+
+![](../../.gitbook/assets/imagen%20%285%29.png)
+
+```markup
+<img src="../images/vaca.png">
+```
+
+{% hint style="info" %}
+Los dos puntos `..` en la ruta relativa `../images/vaca.png` permite devolvernos a la carpeta de nivel superior
+{% endhint %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Las **rutas absolutas** se usan cuando el archivo no se encuentra en el mismo servidor. Por ejemplo:
+
+```text
+<img src="http://www.google.com/images/errors/robot.png">
+<a href="http://google.com/">Ir a Google</a>
+```
+
+En este caso estamos incluyendo una imagen y un link con **rutas absolutas** porque estos recursos no se encuentran en nuestro servidor.
+

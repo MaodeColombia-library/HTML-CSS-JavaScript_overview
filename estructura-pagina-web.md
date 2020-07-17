@@ -6,7 +6,7 @@ description: >-
 
 # Estructura básica de una página WEB - HTML, CSS y JavaScript
 
-[HTML](https://developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/iniciar) es un lenguaje que nos permite definir **la estructura** de las páginas Web. **CSS** es un lenguaje que nos permite definir **el formato \(los estilos\)** de los elementos HTML. **JavaScript** es lenguaje de programacion que permite agregar interactividad a la página WEB y toso esto se esxplica por si solo con esta [muestra](https://html-css-js.com/)
+[HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) \(Hypertext Markup Language\) no es un lenguaje de programación, es un lenguaje de etiquetas que le dice al explorador web como se estructuran las pagina web y nos permite definir **la estructura** de las páginas Web. **CSS** es un lenguaje que nos permite definir **el formato \(los estilos\)** de los elementos HTML. **JavaScript** [muestra](https://html-css-js.com/)
 
 ![HTML, HTML+CSS, HTML+CSS+JavaScript](.gitbook/assets/og.jpg)
 
@@ -36,7 +36,7 @@ Dentro del elemento `<head>` se encuentra el elemento `<title></title>`, `<meta 
 
 ![Elementos &amp;lt;title&amp;gt; y &amp;lt;meta&amp;gt;](.gitbook/assets/20200707213719.png)
 
-El elemento `<title></title>` **establece el título de tu página**, que aparece en la pestaña/ventana de tu navegador cuando la página se carga,tambien se utiliza para describir la página cuando la añades a tus marcadores o la marcas como favorita y es _el factor más importante de la optimización on-page básica de una Web_
+El elemento `<title></title>` **establece el título de tu página**, que aparece en la pestaña/ventana de tu navegador cuando la página se carga, tambien se utiliza para describir la página cuando la añades a tus marcadores o la marcas como favorita y es _el factor más importante de la optimización on-page básica de una Web_
 
 El elemento `<meta charset="utf-8">` **establece que el documento HTML usará la codificación UTF-8**, que incluye la gran mayoría de caracteres de todos los idiomas humanos escritos.
 
@@ -51,7 +51,7 @@ El elemento `<meta charset="utf-8">` **establece que el documento HTML usará la
 
 [commit](https://github.com/MaodeColombia/HTML-CSS/commit/6820646c3730e71dc2a2b1fc24e3de79a3bb0aa6)
 
-![cambios con &amp;lt;charset&amp;gt; y con &amp;lt;title&amp;gt;](.gitbook/assets/20200708172008.png)
+![cambios con charse y con &amp;lt;title&amp;gt;](.gitbook/assets/20200708172008.png)
 
 ```markup
 <!DOCTYPE html>
@@ -67,6 +67,12 @@ El elemento `<meta charset="utf-8">` **establece que el documento HTML usará la
 ```
 
 [Sección](https://wiki.developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/iniciar#Referencias_a_entidades_Inclusi%C3%B3n_de_caracteres_especiales_en_HTML)
+
+{% hint style="info" %}
+Tags in HTML are case-insensitive. This means they can be written in uppercase or lowercase. For example, a [`<title>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title) tag could be written as `<title>`, `<TITLE>`, `<Title>`, `<TiTlE>`, etc., and it will work. However, it is best practice to write all tags in lowercase for consistency, readability, and other reasons.  
+  
+[referencia](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
+{% endhint %}
 
 ## Inclusión de caracteres especiales en HTML <a id="Referencias_a_entidades_Inclusi&#xF3;n_de_caracteres_especiales_en_HTML"></a>
 
