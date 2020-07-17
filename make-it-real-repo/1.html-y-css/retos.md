@@ -1053,7 +1053,7 @@ blockquote {
 {% endtabs %}
 
 {% hint style="info" %}
-Es una buena práctica separar el código CSS y HTML en archivos diferentes.
+Una buena práctica  es separar el código CSS y HTML en archivos diferentes.
 {% endhint %}
 
 Cuando creas referencias a otros archivos \(imágenes, HTML, CSS, JavaScript, etc.\), puedes hacerlo de dos formas: usando **rutas relativas** \(relative paths\), o **rutas absolutas** \(absolute paths\).
@@ -1084,7 +1084,7 @@ otro ejemplo del mismo tipo,  link al archivo `about.html` que se encuentra dent
 <a href="company/about.html">Acerca de Nosotros</a>
 ```
 
-tambien se presenta, los archivos que requieren referenciar están en un **nivel jerárquico superior**, entonces la **ruta relativa** al archivo `vaca.png` que se encuentra dentro de la carpeta `image`sería
+también se presenta que los archivos que se requieren referenciar están en un **nivel jerárquico superior**, entonces para la **ruta relativa** al archivo `vaca.png` que se encuentra dentro de la carpeta `image`sería
 
 ![](../../.gitbook/assets/imagen%20%285%29.png)
 
@@ -1093,33 +1093,248 @@ tambien se presenta, los archivos que requieren referenciar están en un **nivel
 ```
 
 {% hint style="info" %}
-Los dos puntos `..` en la ruta relativa `../images/vaca.png` permite devolvernos a la carpeta de nivel superior
+Los dos puntos `..` en la ruta `../images/vaca.png` permite ir a la carpeta de nivel superior
 {% endhint %}
 
 
 
+Ahora en cuanto a las **rutas absolutas** se usan cuando el archivo no se encuentra en el mismo servidor. Por ejemplo, en este caso estamos incluyendo una imagen y un link con **rutas absolutas** porque estos recursos no se encuentran en nuestro servidor.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Las **rutas absolutas** se usan cuando el archivo no se encuentra en el mismo servidor. Por ejemplo:
-
-```text
+```markup
 <img src="http://www.google.com/images/errors/robot.png">
 <a href="http://google.com/">Ir a Google</a>
 ```
 
-En este caso estamos incluyendo una imagen y un link con **rutas absolutas** porque estos recursos no se encuentran en nuestro servidor.
+## Dammit CSS!
+
+Estamos trabajando sobre una página Web que explica una herramienta llamada [Markdown](https://daringfireball.net/projects/markdown/) que convierte texto a HTML y que ahora es muy popular entre los programadores.
+
+Tu misión en este reto es **posicionar y fijar la pestaña de fondo oscuro con el texto "We &lt;3 Markdown" en la parte inferior derecha** usando estilos de CSS para que se vea como se muestra en la siguiente imagen:
+
+![](../../.gitbook/assets/markdown.gif)
+
+{% tabs %}
+{% tab title="index.html" %}
+```markup
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown</title>
+
+  <link rel="stylesheet" src="http://normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ribbon">
+    We &lt;3 Markdown
+  </div>
+  <div class="container">
+    <div class="left">
+      <h1 id="intro">Markdown</h1>
+      <p>Markdown es un lenguaje para darle formato a texto que va a 
+        ser publicado en la Web, <strong>sin necesidad de usar 
+        HTML</strong>. La sintaxis de Markdown es muy liviana y es 
+        posible aplicar negrilla, crear listas, agregar imágenes y 
+        vínculos, entre otros.</p>
+      
+      <p>Markdown es soportado en los comentarios de Make it Real, en 
+        Github y por varias aplicaciones (descargables u online), 
+        entre otros.</p>
+      
+      <h2 id="primer-ejemplo">Un primer ejemplo</h2>
+      
+      <pre class="markdown">En Markdown es muy fácil mostrar texto en *negrilla*. Podemos crear un link a [Make it Real](http://makeitreal.camp/), o una lista:
+
+* Item 1
+* Item 2
+* Item 3</pre>
+      
+      <div class="markdown">
+        <p>En Markdown es muy fácil mostrar texto en <strong>negrilla</strong>. Podemos crear un link a <a href="http://makeitreal.camp/">Make it Real</a>, o una lista:</p>
+
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </div>
+
+      <h2 id="sintaxis">Sintaxis</h2>
+
+      <p>Esta es una guía rápida de la sintaxis de Markdown.</p>
+
+      <h3>Títulos</h3>
+
+      <pre class="markdown"># Esta es una etiqueta &lt;h1&gt;
+## Esta es una etiqueta &lt;h2&gt;
+### Esta es una etiqueta &lt;h3&gt;</pre>
+      <div class="markdown">
+        <h1>Esta es una etiqueta &lt;h1&gt;</h1>
+        <h2>Esta es una etiqueta &lt;h2&gt;</h2>
+        <h3>Esta es una etiqueta &lt;h3&gt;</h3>
+      </div>
+
+      <h3>Énfasis</h3>
+      <pre class="markdown">**Este texto está en negrilla**
+__Este texto también está en negrilla__
+
+*Este texto está en itálica*
+_Este texto también está en itálica_</pre>
+      <div class="markdown">
+        <p><strong>Este texto está en negrilla</strong><br>
+          <strong>Este texto también está en negrilla</strong></p>
+        <p><em>Este texto está en itálica</em><br>
+          <em>Este texto también está en itálica</em></p>
+      </div>
+
+      <h3>Listas</h3>
+
+      <pre class="markdown">* Item 1
+* Item 2
+  * Item 2.a
+  * Item 2.b</pre>
+      <div class="markdown">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2
+            <ul>
+              <li>Item 2.a</li>
+              <li>Item 2.b</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <pre class="markdown">1. Item 1
+2. Item 2
+3. Item 3
+  * Item 3.a
+  * Item 3.b</pre>
+      <div class="markdown">
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3
+            <ul>
+              <li>Item 3.a</li>
+              <li>Item 3.b</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+
+    </div><div class="right">
+      <nav>
+        <a href="#intro">Introducción</a>
+        <a href="#primer-ejemplo">Un primer ejemplo</a>
+        <a href="#sintaxis">Sintaxis</a>
+      </nav>
+    </div>
+  </div>
+</body>
+</html>
+```
+{% endtab %}
+
+{% tab title="style.css" %}
+```markup
+* { box-sizing: border-box; }
+
+body {
+  color: #303030;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.ribbon {
+  background-color: #303030;
+  color: white;
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 5px 15px;
+  position: fixed;
+    right: 30px;
+    bottom: 0px;
+}
+
+h1 { font-size: 42px; }
+h2 {
+  font-size: 32px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 40px;
+}
+h3 { font-size: 28px; }
+
+.container {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.left {
+  display: inline-block;
+  width: 65%;
+}
+
+.right {
+  display: inline-block;
+  width: 35%;
+  vertical-align: top;
+}
+
+nav {
+  margin: 40px 0 0 40px;
+  padding: 20px 20px 10px;
+  position: fixed;
+}
+
+nav a {
+  display: block;
+  color: #4183c4;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 0 0 10px 10px;
+}
+
+.markdown { border: 1px solid #ddd; }
+
+pre.markdown {
+  background: whiteSmoke;
+  font-size: 16px;
+  white-space: pre-wrap;
+  padding: 20px;
+  margin: 0;
+}
+
+div.markdown {
+  font-size: 18px;
+  margin: -1px 0 30px;
+  padding: 10px 20px;
+}
+
+div.markdown h1 { font-size: 36px; }
+div.markdown h2 { font-size: 27px; border: none; }
+div.markdown h3 { font-size: 21px; }
+
+```
+{% endtab %}
+{% endtabs %}
+
+**Nota**: La única restricción es no modificar el HTML.
+
+### Instrucciones
+
+1. Oprime el botón **Preview** para ver el estado actual.
+2. Modifica la página para que la pestaña se mantenga fija en la parte inferior derecha \(a `30px` del margen derecho\). Fíjate que funcione así cambies el tamaño del navegador.
+3. Oprime **Evaluar Solución** cuando hayas terminado.
+
+
+
+###  **Discusión:** Dammit CSS!
+
+
 
